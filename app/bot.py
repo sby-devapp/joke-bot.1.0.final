@@ -78,12 +78,14 @@ class JokeBot:
 
         language = args[0].lower()
         joke = " ".join(args[1:])
+        """
         if language not in self.SUPPORTED_LANGUAGES:
             await update.message.reply_text(
                 f"Unsupported language. Supported languages: {', '.join(self.SUPPORTED_LANGUAGES)}"
             )
             return
-
+        """
+        
         try:
             joke_id = self.jokes_db.add_joke(joke, language)
             print(f"[LOG] Joke added | Chat ID: {chat_id} | Language: {language} | Joke ID: {joke_id}")
