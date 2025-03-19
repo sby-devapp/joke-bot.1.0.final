@@ -9,7 +9,7 @@ A Telegram bot that sends random jokes to users. Supports multiple languages and
 - Add new jokes via `/addjoke`.
 
 ## Setup
-1. git clone (https://github.com/sbaitipro/joke-bot1.0.final.git)
+1. git clone (https://github.com/sbaitipro/joke-bot.1.0.final.git)
 2. cd joke-bot
 3. Install dependencies: `pip install -r requirements.txt`.
 4. Add your Telegram bot token to a `.env` file.
