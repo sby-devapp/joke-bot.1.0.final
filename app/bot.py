@@ -99,6 +99,9 @@ class JokeBot:
         chat_type = update.message.chat.type
         print(f"[LOG] /setlang executed | Chat ID: {chat_id}")
 
+        #update available languages from database
+        self.SUPPORTED_LANGUAGES = self.jokes_db.get_supported_languages()
+
         if chat_type in ['group', 'supergroup']:
             admins = await context.bot.get_chat_administrators(chat_id)
             admin_ids = [admin.user.id for admin in admins]
