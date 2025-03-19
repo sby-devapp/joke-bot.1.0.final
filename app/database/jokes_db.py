@@ -128,7 +128,7 @@ class JokesDB:
             )
             conn.commit()
 
-    def set_schedule(self, chat_id, scheduleb):
+    def set_schedule(self, chat_id, schedule):
         """
         Sets the schedule interval for a chat.
         :param chat_id: The ID of the chat.
