@@ -85,7 +85,7 @@ class JokeBot:
             )
             return
         """
-        
+
         try:
             joke_id = self.jokes_db.add_joke(joke, language)
             print(f"[LOG] Joke added | Chat ID: {chat_id} | Language: {language} | Joke ID: {joke_id}")
@@ -185,7 +185,7 @@ class JokeBot:
             "/stop - Stop the bot\n"
             "/joke - Get a random joke\n"
             "/setlang <language> - Set the preferred language for jokes (e.g., /setlang fr, /setlang all)\n"
-            "/setschedule <seconds> - Set the joke-sending interval in seconds (e.g., /setschedule 300)\n"
+            "/setschedule <seconds> - Set the joke-sending interval in minutes (e.g., /setschedule 15)\n"
             "/addjoke <language> <joke> - Add a new joke to the database (e.g., /addjoke ar لماذا لا يلعب الهيكل العظمي مع الأصدقاء؟ لأنه ليس لديه أصدقاء.)\n"
             "/help - Show this help message"
         )
