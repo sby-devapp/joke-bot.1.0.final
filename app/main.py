@@ -47,6 +47,8 @@ class App:
             application.add_handler(CommandHandler("stats", bot.stats))
             application.add_handler(CommandHandler("help", bot.help))
             application.add_handler(CommandHandler("sendjokes", bot.send_jokes_to_active_chats))
+            application.add_handler(CommandHandler("refresh", bot.refresh))
+            application.add_handler(CommandHandler("sessioninfo", bot.session_info))
 
             # Restore active chats and schedule jobs
             #self.restore_active_chats(application, bot)
